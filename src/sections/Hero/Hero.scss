@@ -1,0 +1,56 @@
+.hero {
+  background-image: linear-gradient(
+    to right bottom,
+    #240730,
+    #1e092c,
+    #190927,
+    #150922,
+    #11081c
+  );
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  color: var(--clr-white);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+
+    width: var(--container-width);
+    max-width: var(--container-max-width);
+  }
+
+  &__img {
+    width: 400px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__heading {
+    background: linear-gradient(
+      111.6deg,
+      rgb(217, 111, 111) 0.4%,
+      rgb(34, 14, 215) 100.3%
+    );
+    background-clip: text;
+
+    font-size: 7rem;
+    color: transparent;
+  }
+
+  &__desc {
+    text-align: center;
+    color: rgba(214, 214, 214, 0.826);
+  }
+
+  &__register-btn {
+    margin-top: 35px;
+    padding-block: 10px;
+  }
+}

@@ -13,7 +13,7 @@ const useIsMobile = () => {
     };
   }, []);
 
-  return width <= 640;
+  return width <= 750;
 };
 
 export default useIsMobile;

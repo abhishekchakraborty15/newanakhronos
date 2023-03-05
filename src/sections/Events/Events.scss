@@ -1,0 +1,53 @@
+.event__card {
+  $card-width: 400px;
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($card-width, auto));
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  width: $card-width;
+  max-width: 500px;
+  min-width: 250px;
+  background-color: var(--clr-primary-accent-light);
+  padding: 15px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
+  &-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+    border: 1px solid var(--clr-primary-accent-light);
+  }
+
+  &-title {
+    margin: 8px 0 5px 0;
+    font-size: 1.4rem;
+  }
+
+  &-description {
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &-btn {
+    gap: 0.5rem;
+    margin-top: 15px;
+    padding: 4px 10px;
+  }
+}

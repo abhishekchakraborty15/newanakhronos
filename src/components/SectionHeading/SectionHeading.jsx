@@ -2,8 +2,8 @@ import React from 'react';
 
 import './SectionHeading.scss';
 
-const SectionHeading = () => {
-  return <div>SectionHeading</div>;
+const SectionHeading = ({ title }) => {
+  return <div className="section-heading">{title}</div>;
 };
 
 export default SectionHeading;

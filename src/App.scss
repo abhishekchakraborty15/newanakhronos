@@ -1,0 +1,31 @@
+:root {
+  --clr-red: rgb(138, 22, 21);
+  --clr-red-dark: rgb(109, 16, 14);
+  --clr-red-accent: rgba(190, 153, 152, 0.622);
+  --clr-black: rgb(33, 37, 41);
+  --clr-white: rgb(255, 255, 255);
+
+  --clr-primary: var(--clr-red);
+  --clr-primary-dark: var(--clr-red-dark);
+  --clr-primary-accent: var(--clr-red-accent);
+  --clr-primary-accent-light: rgba(210, 184, 183, 0.622);
+
+  --clr-bg: var(--clr-white);
+  --clr-text: var(--clr-black);
+
+  --container-width: 95%;
+  --container-max-width: 1300px;
+}
+
+.app {
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+}
+
+.section {
+  &-container {
+    width: var(--container-width);
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+  }
+}

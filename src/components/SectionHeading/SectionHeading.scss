@@ -1,0 +1,12 @@
+.section-heading {
+  color: var(--clr-text);
+  font-size: 3rem;
+  font-weight: 700;
+
+  &::before {
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: var(--clr-primary);
+  }
+}

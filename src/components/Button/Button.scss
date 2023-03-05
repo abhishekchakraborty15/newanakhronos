@@ -1,0 +1,28 @@
+.btn {
+  cursor: pointer;
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  border: 1px solid var(--clr-primary);
+  outline: none;
+  border-radius: 10px;
+  padding: 6px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+
+  &--solid {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+
+    &:hover {
+      background-color: var(--clr-primary-dark);
+      border-color: var(--clr-primary-dark);
+    }
+  }
+
+  &--outline {
+    background-color: var(--clr-primary-accent);
+    color: var(--clr-primary);
+  }
+}
